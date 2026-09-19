@@ -18,24 +18,18 @@
     --color-orange: #ffb596;
     --color-orange-strong: #e86c2d;
 
-    --gradient-instagram: linear-gradient(
-        90deg,
-        var(--color-orange-strong),
-        var(--color-pink-strong),
-        var(--color-purple-strong)
-    );
-    --gradient-ring: linear-gradient(
-        135deg,
-        var(--color-orange),
-        var(--color-pink-strong),
-        var(--color-purple)
-    );
-    --gradient-hero-text: linear-gradient(
-        90deg,
-        var(--color-orange),
-        var(--color-pink-strong),
-        var(--color-purple)
-    );
+    --gradient-instagram: linear-gradient(90deg,
+            var(--color-orange-strong),
+            var(--color-pink-strong),
+            var(--color-purple-strong));
+    --gradient-ring: linear-gradient(135deg,
+            var(--color-orange),
+            var(--color-pink-strong),
+            var(--color-purple));
+    --gradient-hero-text: linear-gradient(90deg,
+            var(--color-orange),
+            var(--color-pink-strong),
+            var(--color-purple));
 
     --font-main: "Plus Jakarta Sans", sans-serif;
     --max-width: 1280px;
@@ -93,28 +87,28 @@ ul {
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-.btn{
+.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border-radius: 40px ;
+    border-radius: 40px;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
 }
 
-.btn-primary{
+.btn-primary {
     background: var(--gradient-instagram);
     color: var(--color-on-primary);
     box-shadow: 0 0 24px rgba(255, 76, 131, 0.35);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     opacity: 0.95;
 }
 
-.site-header{
+.site-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -125,7 +119,7 @@ ul {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
-.nav-container{
+.nav-container {
     width: var(--max-width);
     margin: 0 auto;
     height: 80px;
@@ -134,26 +128,26 @@ ul {
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.logo img{
+.logo img {
     height: 32px;
     width: auto;
     object-fit: contain;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     white-space: nowrap;
 }
 
-.nav-link{
+.nav-link {
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
@@ -163,129 +157,58 @@ ul {
 
 .nav-link:hover,
 .nav-link.is-active:hover,
-.nav-download:hover{
+.nav-download:hover {
     color: var(--color-text);
 }
 
-.nav-link.is-active{
+.nav-link.is-active {
     background: var(--color-pink-strong);
     color: #660029;
     border-radius: 999px;
     padding: 4px 8px;
 }
 
-.nav-actions{
+.nav-actions {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.nav-download{
-    padding: 8px 24px; 
+.nav-download {
+    padding: 8px 24px;
 }
 
-.main{
+.main {
     padding-top: 80px;
     position: relative;
 }
 
 
 /* ----Home page--- */
-.hero{
+.hero {
     width: var(--max-width);
-    margin: 3rem auto;
+    margin: auto;
     position: relative;
     padding: 4rem 0;
     overflow: hidden;
 }
 
-.hero-grid{
+.hero-grid {
     display: flex;
     align-items: center;
     gap: 2.5rem;
     position: relative;
     z-index: 1;
+    margin-top: 50px;
 }
 
-<<<<<<< HEAD
 .hero-content {
-=======
-.hero-content{
->>>>>>> 6592919f9d3610ded85bbb2aee57c28b7d0b075b
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
 }
-<<<<<<< HEAD
-=======
-
-.badge{
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 4px 16px;
-    border-radius: 60px;
-    background: rgba(42, 42, 45, 0.8);
-    backdrop-filter: blur(12px);
-    font-size: 11px;
-    line-height: 14px;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-    font-weight: 700;
-}
-
-.badge-dot{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--color-pink);
-}
-
-.hero-title{
-    font-size: 64px;
-    line-height: 1.05;
-    font-weight: 800;
-}
-
-.hero-title span{
-    background: var(--gradient-hero-text);
-    background-clip: text;
-    color: transparent;
-}
-
-.hero-text{
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--color-text-muted);
-    max-width: 32rem;
-}
-
-.hero-actions{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.btn-lg{
-    padding: 16px 40px;
-}
-
-.hero-rating{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 13px;
-    color: var(--color-text-muted);
-}
-
-.stars{
-    display: flex;
-    color: var(--color-orange);
-}
->>>>>>> 6592919f9d3610ded85bbb2aee57c28b7d0b075b
 
 .badge {
     display: inline-flex;
@@ -338,4 +261,96 @@ ul {
     padding: 16px 40px;
 }
 
+.hero-rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+/* ----download */
+.download {
+    width: 95%;
+    margin: 40px auto;
+    padding: 30px 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    background: var(--color-surface-highest);
+}
+
+
+.download-left {
+    width: 65%;
+}
+
+
+.download-left h2 {
+    margin: 5px 0 10px;
+}
+
+
+.download-left p {
+    margin: 5px 0 15px;
+}
+
+
+.download-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.download-buttons a {
+    border-radius: 12px;
+    border: 1px solid var(--color-surface-bright);
+    height: auto;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.download-buttons a:hover {
+    opacity: 0.8;
+}
+
+.qr-section {
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+
+.qr-section img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+
+.qr-details {
+    flex: 1;
+}
+
+
+.qr-details h4 {
+    margin: 0 0 5px;
+}
+
+
+.qr-details p {
+    margin: 0;
+}
 
