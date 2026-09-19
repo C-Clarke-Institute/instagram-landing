@@ -101,27 +101,25 @@ ul {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10;
+    z-index: 50;
     background: rgba(19, 19, 22, 0.88);
-    border-bottom: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--color-surface-highest);
     backdrop-filter: blur(16px);
-
 }
 
-.navbar {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
     gap: 24px;
     letter-spacing: 0.5px;
-}
-
-.container {
-    width: min(100% - 2rem, var(--container));
+    width: min(100% - 2rem);
     margin: 0 auto;
     color: var(--color-text);
+    
 }
+
 
 .navbar-brand {
     display: inline-flex;
@@ -129,6 +127,8 @@ ul {
     gap: 10px;
     font-size: 16px;
     font-weight: 700;
+    transform: scale(3.5);
+    transform-origin: left center;
 }
 
 .brand-icon {
@@ -137,15 +137,13 @@ ul {
     height: 32px;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--border-soft);
     border-radius: 8px;
-    background: var(--surface-light);
-    color: var(--accent);
 }
 
-.navbar-brand span {
-    color: var(--accent);
+.brand-icon:hover {
+    opacity: 0.9;
 }
+
 
 .nav-links {
     display: flex;
@@ -154,33 +152,40 @@ ul {
 }
 
 .nav-links a {
-    color: var(--text-secondary);
+    color: var(--color-text);
     font-size: 14px;
     font-weight: 700;
     padding: 8px 12px;
-    border-radius: 6px;
+    border-radius: 50px;
 }
 
 .nav-links a:hover {
-    background: var(--surface-light);
+    opacity: 0.9;
 }
 
-.nav-links a:first-child {
-    background: var(--surface-raised);
-    color: var(--text-primary);
+.active {
+    background: var(--color-pink-strong);
+    border-radius: 999px;
+
+}
+.active:hover {
+    opacity: 0.95;
 }
 
-.nav-button {
+
+.nav-actions {
     padding: 8px 14px;
-    border: 1px solid var(--border-soft);
-    border-radius: 8px;
-    background: var(--surface-light);
-    color: var(--text-primary);
+    border: 1px solid ;
+    font-weight: 700;
+    border-radius: 50px;
+    background: var(--gradient-instagram);
+    color: var(--color-on-primary);
     font-size: 12px;
     transition: border-color 0.2s ease, color 0.2s ease;
+    box-shadow: 0 0 24px rgba(255, 76, 131, 0.35);
 }
 
-.nav-button:hover {
-    border: #424844;
-    color: var(--accent);
+.nav-actions:hover {
+    opacity: 0.95;
 }
+
