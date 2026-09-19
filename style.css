@@ -93,6 +93,70 @@ ul {
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-.navbar-container{
-    display: flex;
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    font-size: 700;
+    line-height: 20px;
 }
+
+.btn-primary{
+    background: var(--gradient-instagram);
+    color: var(--color-on-primary);
+    box-shadow: 0 0 24px rgb();
+    border-radius: 999px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 42px;
+}
+ .navbar-links{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+ }
+
+ .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+ }
+
+ .logo img{
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+ }
+
+ .nav-links{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    padding: 4px 8px;
+ }
+ 
+ .nav-link:hover{
+    color: var(--color-pink-strong);
+    color: #660029;
+    border-radius: 999px;
+    padding: 4px 8px;
+ }
+
+ .nav-actions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+ }
+
+ .nav-download{
+
+ }
