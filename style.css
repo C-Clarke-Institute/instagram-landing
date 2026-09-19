@@ -191,7 +191,7 @@ ul {
 
 .hero{
     width: var(--max-width);
-    margin: auto;
+    margin: 3rem auto;
     position: relative;
     padding: 4rem 0;
     overflow: hidden;
@@ -205,6 +205,78 @@ ul {
     z-index: 1;
 }
 
+.hero-content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 16px;
+    border-radius: 60px;
+    background: rgba(42, 42, 45, 0.8);
+    backdrop-filter: blur(12px);
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    font-weight: 700;
+}
+
+.badge-dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-pink);
+}
+
+.hero-title{
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.hero-title span{
+    background: var(--gradient-hero-text);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-text{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-text-muted);
+    max-width: 32rem;
+}
+
+.hero-actions{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-lg{
+    padding: 16px 40px;
+}
+
+.hero-rating{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+.stars{
+    display: flex;
+    color: var(--color-orange);
+}
 
 
 
